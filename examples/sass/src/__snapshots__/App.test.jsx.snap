@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest-style-transformer-sass example style extraction does not regress 1`] = `
+"h1 {
+  background: black;
+}
+
+a {
+  color: white;
+}"
+`;

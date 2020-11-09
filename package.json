@@ -1,0 +1,61 @@
+{
+  "author": "Wes Rice",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@octokit/core": "^3.2.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "@vue/test-utils": "^1.0.0-beta.31",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.1",
+    "prettier": "2.1.2",
+    "semantic-release": "^17.2.2",
+    "semantic-release-monorepo": "^7.0.3",
+    "typescript": "^4.0.5",
+    "verdaccio": "^4.8.1"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "license": "MIT",
+  "name": "jest-style-transformers",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wesrice/jest-style-transformers.git"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --force-local",
+    "build": "lerna run build",
+    "clean": "lerna clean --yes && rm -rf node_modules",
+    "commit": "cz",
+    "lint": "eslint . --ext js,ts",
+    "lint:fix": "npm run lint -- --fix",
+    "postregistry:unpublish": "git checkout lerna.json **/package-lock.json",
+    "registry:publish": "npx --userconfig=.registry/.npmrc lerna publish --no-git-tag-version --no-push --no-verify-access --registry http://localhost:4873 --legacy-auth dGVzdDp0ZXN0",
+    "registry:start": "npx --userconfig=.registry/.npmrc verdaccio --config .registryrc.js",
+    "registry:unpublish": "lerna run registry:unpublish",
+    "reinstall": "npm run clean && npm install",
+    "semantic-release": "semantic-release",
+    "test": "lerna run test --stream --parallel"
+  },
+  "version": "0.0.0"
+}

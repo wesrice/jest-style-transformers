@@ -1,0 +1,8 @@
+.registry/*
+!.registry/.npmrc
+!.registry/htpasswd
+coverage
+build
+node_modules
+
+yarn.lock
