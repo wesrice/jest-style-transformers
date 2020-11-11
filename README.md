@@ -1,6 +1,6 @@
 # Jest Style Transformers
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![CI / CD](https://github.com/wesrice/jest-style-transformers/workflows/CI%20/%20CD/badge.svg)
 
 Testing component styles via Jest is a bit tricky. Jest utilizes
 [JSDom](https://github.com/jsdom/jsdom), "a pure-JavaScript implementation of
