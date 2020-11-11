@@ -2,9 +2,10 @@
   "author": "Wes Rice",
   "dependencies": {
     "@csstools/postcss-sass": "^4.0.0",
-    "jest-style-transformer-utils": "^1.0.0"
+    "jest-style-transformer-utils": "^1.0.0",
+    "postcss-modules": "^3.2.2"
   },
-  "description": "Jest style transformer for Sass",
+  "description": "Jest style transformer for Sass + CSS Modules",
   "engines": {
     "node": ">= 12.0.0"
   },
@@ -17,18 +18,19 @@
     "testing",
     "styles",
     "sass",
-    "scss"
+    "scss",
+    "css modules"
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "jest-style-transformer-sass",
+  "name": "jest-style-transformer-sass-css-modules",
   "repository": {
     "type": "git",
     "url": "https://github.com/wesrice/jest-style-transformers.git",
-    "directory": "packages/jest-style-transformer-sass"
+    "directory": "packages/jest-style-transformer-sass-css-modules"
   },
   "scripts": {
-    "registry:unpublish": "npm unpublish -f --registry http://localhost:4873/ jest-style-transformer-sass",
+    "registry:unpublish": "npm unpublish -f --registry http://localhost:4873/ jest-style-transformer-sass-css-modules",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"
