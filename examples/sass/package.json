@@ -26,5 +26,6 @@
   "private": true,
   "scripts": {
     "test": "jest --config .jestrc.js"
-  }
+  },
+  "version": "1.0.0"
 }
