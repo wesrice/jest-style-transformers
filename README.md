@@ -24,9 +24,10 @@ or whatever else you'd like to do with the styles.
 | CSS technique                                          | Supported |
 | ------------------------------------------------------ | --------- |
 | Inline Styles                                          | n/a       |
-| CSS stylesheets                                        | ⬜        |
-| Sass stylesheets                                       | ✅        |
+| CSS                                                    | ⬜        |
+| Sass                                                   | ✅        |
 | CSS Modules                                            | ⬜        |
+| Sass + CSS Modules                                     | ✅        |
 | [Emotion](https://emotion.sh)                          | n/a       |
 | [Styled Components](https://www.styled-components.com) | ⬜       |
 
