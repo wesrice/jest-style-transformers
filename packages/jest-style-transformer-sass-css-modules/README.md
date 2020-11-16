@@ -1,10 +1,10 @@
-# Jest Style Transformer - Sass
+# Jest Style Transformer - Sass + CSS Modules
 
 ## Installation
 ```bash
-npm install -D jest-style-transformer-utils jest-style-transformer-sass
+npm install -D jest-style-transformer-utils jest-style-transformer-sass-css-modules
 ```
 
 ## Usage
 
-See [Sass example](https://github.com/wesrice/jest-style-transformers/tree/main/examples/sass).
+See [Sass + CSS Modules example](https://github.com/wesrice/jest-style-transformers/tree/main/examples/sass-css-modules).
