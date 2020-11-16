@@ -30,5 +30,5 @@
     "registry:unpublish": "npm unpublish -f --registry http://localhost:4873/ jest-style-transformer-css-modules",
     "test": "jest --passWithNoTests"
   },
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
