@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest-style-transformer-css-modules example style extraction does not regress 1`] = `
+".Link-module--a--3a6sm {
+  color: white;
+}
+.Heading-module--h1--fiQ-J {
+  background: black;
+}
+"
+`;
