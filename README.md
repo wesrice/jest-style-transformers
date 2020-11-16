@@ -26,7 +26,7 @@ or whatever else you'd like to do with the styles.
 | Inline Styles                                          | n/a       |
 | CSS                                                    | ⬜        |
 | Sass                                                   | ✅        |
-| CSS Modules                                            | ⬜        |
+| CSS Modules                                            | ✅        |
 | Sass + CSS Modules                                     | ✅        |
 | [Emotion](https://emotion.sh)                          | n/a       |
 | [Styled Components](https://www.styled-components.com) | ⬜       |
