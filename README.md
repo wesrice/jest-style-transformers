@@ -34,3 +34,11 @@ or whatever else you'd like to do with the styles.
 ## Inspiration
 Shoutout to [React Screenshot Test](https://github.com/fwouts/react-screenshot-test)
 for the prior art.
+
+## Development
+
+```sh
+npm run install
+npm run bootstrap
+npm run build
+```
