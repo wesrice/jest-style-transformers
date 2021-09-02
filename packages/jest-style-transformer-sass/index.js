@@ -7,12 +7,11 @@ const TRANSFORM_VERSION = '1';
 const configPath = `./node_modules/jest-style-transformer-sass/.postcssrc.js`;
 
 module.exports = {
-  getCacheKey: (fileData, filePath, configStr, options) =>
+  getCacheKey: (source, path, options) =>
     createCacheKey(
       {
-        fileData,
-        filePath,
-        configStr,
+        source,
+        path,
         options,
       },
       [TRANSFORM_VERSION],
