@@ -1,30 +1,27 @@
 import crypto from 'crypto';
-import type { CacheKeyOptions } from '@jest/transform';
+import type { TransformOptions } from '@jest/transform';
 import type { Config } from '@jest/types';
 
-type JestCacheKeyParams = {
-  fileData: string;
-  filePath: Config.Path;
-  configStr: string;
-  options: CacheKeyOptions;
-};
-
 export const createCacheKey = (
-  jest: JestCacheKeyParams,
-  additionalOptions = ['1'],
+  jest: {
+    source: string;
+    path: Config.Path;
+    options: TransformOptions<unknown>;
+  },
+  additionalOptions = ['1'], // useful for forcing cache busting
 ) => {
   const key = crypto
     .createHash('md5')
     .update('\0', 'utf8')
-    .update(jest.fileData)
+    .update(jest.source)
     .update('\0', 'utf8')
-    .update(jest.filePath)
+    .update(jest.path)
     .update('\0', 'utf8')
-    .update(jest.configStr);
+    .update(jest.options.configString);
 
-  additionalOptions.forEach((option) => {
+  additionalOptions.forEach((additionalOption) => {
     key.update('\0', 'utf8');
-    key.update(option);
+    key.update(additionalOption);
   });
 
   return key

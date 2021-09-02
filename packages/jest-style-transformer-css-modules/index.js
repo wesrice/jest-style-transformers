@@ -13,12 +13,11 @@ const TRANSFORM_VERSION = '1';
 const THIS_FILE = fs.readFileSync(__filename);
 
 module.exports = {
-  getCacheKey: (fileData, filePath, configStr, options) =>
+  getCacheKey: (source, path, options) =>
     createCacheKey(
       {
-        fileData,
-        filePath,
-        configStr,
+        source,
+        path,
         options,
       },
       [CONFIG_FILE, TRANSFORM_VERSION, THIS_FILE],
