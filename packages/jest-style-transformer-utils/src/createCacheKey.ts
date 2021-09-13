@@ -8,7 +8,7 @@ export const createCacheKey = (
     path: Config.Path;
     options: TransformOptions<unknown>;
   },
-  additionalOptions = ['1'], // useful for forcing cache busting
+  additionalOptions = ['2'], // useful for forcing cache busting
 ) => {
   const key = crypto
     .createHash('md5')
