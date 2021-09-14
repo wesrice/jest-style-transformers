@@ -42,5 +42,5 @@
     "test": "jest --config .jestrc.js --passWithNoTests"
   },
   "types": "build/index.d.ts",
-  "version": "1.0.0"
+  "version": "2.0.0"
 }
