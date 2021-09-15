@@ -40,7 +40,7 @@ jobs:
         run: npm install
 
       - name: Install package and example dependencies
-        run: npx lerna bootstrap --force-local
+        run: npx lerna bootstrap --force-local --no-ci
 
       - name: Build packages
         run: npm run build
@@ -83,7 +83,7 @@ jobs:
           CI: true
 
       - name: Install package and example dependencies
-        run: npx lerna bootstrap --force-local
+        run: npx lerna bootstrap --force-local --no-ci
 
       - name: Build
         run: npm run build

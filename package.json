@@ -42,7 +42,7 @@
     "url": "https://github.com/wesrice/jest-style-transformers.git"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --force-local",
+    "bootstrap": "lerna bootstrap --force-local --no-ci",
     "build": "lerna run build",
     "clean": "lerna clean --yes && rm -rf node_modules",
     "commit": "cz",
