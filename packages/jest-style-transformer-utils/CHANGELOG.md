@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [jest-style-transformer-utils-v2.0.1](https://github.com/wesrice/jest-style-transformers/compare/jest-style-transformer-utils-v2.0.0...jest-style-transformer-utils-v2.0.1) (2021-09-17)
+
+
+### Bug Fixes
+
+* update dependencies that depend on `jest-style-transformer-utils` ([e50de9f](https://github.com/wesrice/jest-style-transformers/commit/e50de9f3094197d5fb8047452461935bfd6b2fb5))
+
 # [jest-style-transformer-utils-v2.0.0](https://github.com/wesrice/jest-style-transformers/compare/jest-style-transformer-utils-v1.0.0...jest-style-transformer-utils-v2.0.0) (2021-09-15)
 
 
